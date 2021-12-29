@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lan="en-US">
+<head>
+  <title>Text-Info</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Get all the possible information about your text">
+  <meta name="keywords" content="text,words,info">
+  <meta name="author" content="Carlos Puente González">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/icon1.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body onload="getData(input)">
+  <div id="group">
+    <h1 id="webTitle">This is Text-Info!</h1>
+    <p>You can paste (or write) a text here to check for all the info you need</p>
+    <div id="textDiv">
+      <textarea id="textInput" placeholder="Your text goes here" autofocus="autofocus" oninput="getData()"></textarea>
+    </div>
+    <p><span class="infoTitles">Words: &nbsp</span><span id="totalWords">0</span></p>
+    <p><span class="infoTitles">Characters (without spaces): &nbsp</span><span id="totalChars">0</span></p>
+    <p><span class="infoTitles">Characters (with spaces): &nbsp</span><span id="charsSpaces">0</span></p>
+    <p><span class="infoTitles">Paragraphs: &nbsp</span><span id="paragraphs">0</span></p>
+    <p><span class="infoTitles">Reading Time: &nbsp</span><span id="time">0</span></p>
+    <p><span class="infoTitles">Longest word: &nbsp</span><span id="longestWord">none</span></p>
+    <p><span class="infoTitles">Different characters, symbols & digits: &nbsp</span><span id="charsSymbolsDigits">none</span></p>
+    <p><span class="infoTitles">Most frequent word: &nbsp</span><span id="mostFrequentWord">none</span></p>
+    <p><span class="infoTitles">Lines in Helvetica 11: &nbsp</span><span id="lines">0</span></p>
+    <p id="longestParagraphP"><span class="infoTitles">Longest Paragraph: &nbsp</span><span id="longestParagraph">none</span></p>
+    <p id="infoParagraph"></p>
+  </div>
+</body>
+</html> 
